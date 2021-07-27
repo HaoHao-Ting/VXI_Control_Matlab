@@ -1,5 +1,5 @@
 % ADQ14接口函数
-classdef ADQ14
+classdef C_ADQ14
     properties
         interface = 0;
         boardid = 1;
@@ -14,7 +14,7 @@ classdef ADQ14
         nRecords_raw =1;
     end
     methods
-        function obj = ADQ14()
+        function obj = C_ADQ14()
             addpath('./ADQ14_MATLAB');
             define_command_codes;
             obj.mode_trigger = SW_TRIGGER_MODE;

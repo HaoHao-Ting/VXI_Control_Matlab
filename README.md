@@ -19,7 +19,7 @@
 |C_RS_FSW43|罗德 FSW43系列频谱仪控制|["R&S®FSW user manual"](https://www.rohde-schwarz.com/hk/manual/r-s-fsw-user-manual-manuals-gb1_78701-29088.html) && 仪器自带帮助提供了串口命令|
 |C_AWG70k|泰克AWG70000系列任意波形发生器(AWG70001A, AWG70002A, AWG70001B, AWG70002B)|["AWG70000 Series"](https://www.tek.com/signal-generator/awg70000-arbitrary-waveform-generator-manual/awg70000-series) && ["AWG 7000 MATLAB ICT Send Waveform 1"](https://forum.tek.com/viewtopic.php?t=133612&__cf_chl_jschl_tk__=pmd_2fde0f4f9ba6d18c1e6f8e35c9e0cfa58466f896-1627393668-0-gqNtZGzNAiKjcnBszQx6)|
 |C_TektronixOscilloscope|泰克MSO70000系列示波器|["DPO70000SX, MSO/DPO70000DX, MSO/DPO70000C, DPO7000C, MSO5000/B, and DPO5000/B Series"](https://www.tek.com/oscilloscope/dpo70000-mso70000-manual/dpo70000sx-mso-dpo70000dx-mso-dpo70000c-dpo7000c-mso5000-b-1) && ["Reference Waveform File Format"](https://www.tek.com/manual/oscilloscope/reference-waveform-file-format-dpo7000-digital-phosphor-oscilloscope)|
-|C_AWG14|Teledyne SP Device高速采集卡 ADQ14及ADQ12|**资料在设备商提供的驱动中**|
+|C_ADQ14|Teledyne SP Device高速采集卡 ADQ14及ADQ12|**资料在设备商提供的驱动中**|
 
 # 使用说明 
 
