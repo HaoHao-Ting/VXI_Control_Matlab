@@ -6,6 +6,7 @@
 % obj.setMarkerX(fre, 1); 设置marker 1 的位置
 % obj.setMarkerToPeak(1) 设置marker1 到峰值
 % power = obj.getMarkerPower(1);  获取marker1的功率值
+% fre = obj.getMarkerFre(1); 获取Marker1的频率值
 % data = obj.saveData()
 % obj.close(); 断开连接
 
@@ -61,7 +62,10 @@ classdef C_EXA_N9010A
             command0 = sprintf(':CALCulate:MARKer%d:Y?', id);
             power = query(obj.interface, command0);
         end
-
+        function fre = getMarkerFre(obj, id)
+            command0 = sprintf(':CALCulate:MARKer%d:X?', id);
+            fre = query(obj.interface, command0);
+        end
         function data = saveData(obj)
             options = weboptions('Timeout',Inf);
             fileName = 'tmp.csv';
