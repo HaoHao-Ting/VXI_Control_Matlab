@@ -1,8 +1,8 @@
-% ÊÊÓÃÓÚÂŞµÂFSW43ÆµÆ×ÒÇµÄÒ»Ğ©¿ØÖÆÃüÁî
-% obj = C_RS_FSW43('102.10.1.1'); ¸ù¾İIPµØÖ·Á¬½ÓÉè±¸
-% obj.saveASCII('C:\1.csv'); ½«ÆµÆ×Êı¾İÒÔASCII¸ñÊ½±£´æµ½ÒÇÆ÷ÖĞ
-% [fre, power] = obj.getMaxPeak(); »ñÈ¡ÆµÆ××î¸ß·åµÄ·ù¶ÈºÍÆµÂÊ
-% [X, Y] = getMarkerN(obj, iMarker); % »ñÈ¡Marker i¶ÔÓ¦µÄÆµÂÊºÍ·ù¶È 
+% é€‚ç”¨äºç½—å¾·FSW43é¢‘è°±ä»ªçš„ä¸€äº›æ§åˆ¶å‘½ä»¤
+% obj = C_RS_FSW43('102.10.1.1'); æ ¹æ®IPåœ°å€è¿æ¥è®¾å¤‡
+% obj.saveASCII('C:\1.csv'); å°†é¢‘è°±æ•°æ®ä»¥ASCIIæ ¼å¼ä¿å­˜åˆ°ä»ªå™¨ä¸­
+% [fre, power] = obj.getMaxPeak(); è·å–é¢‘è°±æœ€é«˜å³°çš„å¹…åº¦å’Œé¢‘ç‡
+% [X, Y] = getMarkerN(obj, iMarker); % è·å–Marker iå¯¹åº”çš„é¢‘ç‡å’Œå¹…åº¦ 
 classdef C_RS_FSW43
     properties
         interface = 0;

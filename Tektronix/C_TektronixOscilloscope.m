@@ -1,8 +1,8 @@
 % 泰克示波器采集工具
 % obj = C_TektronixOscilloscope('192.158.1.1', 10e9, 4e-6, [1,0,0,1]); 连接设备
 % obj = C_TektronixOscilloscope('192.158.1.1', SampleRate, TimeDiv, ChanIdx); 连接设备
-% C_TektronixOscilloscope.getData(); 采集数据
-% C_TektronixOscilloscope.close(); 断开连接
+% data = obj.getData(); 采集数据, 并保存到data数组
+% obj.close(); 断开连接
 classdef C_TektronixOscilloscope
     properties
         interface = 0;

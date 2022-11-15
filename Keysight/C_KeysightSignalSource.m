@@ -1,5 +1,5 @@
 % 使用说明 适用于是德科技的微波源 E8257D N5183B
-% obj = KeysightSignalSource('192.158.1.1'); 连接设备
+% obj = C_KeysightSignalSource('192.158.1.1'); 连接设备
 % obj.setFre(10e9); 设置频率
 % obj.setLevel(10); 设置幅度
 % obj.on(); 开输出

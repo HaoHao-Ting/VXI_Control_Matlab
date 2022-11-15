@@ -1,5 +1,5 @@
 %% 使用说明 控制泰克的AWG 70000系列
-% obj = AWG70k('192.158.1.1'); 连接设备
+% obj = C_AWG70k('192.158.1.1'); 连接设备
 % obj.setFre(10e9); 设置频率
 % fre = obj.getFre(); 获取当前采样率
 % obj.setLevel(0.5); 设置0.5mVpp

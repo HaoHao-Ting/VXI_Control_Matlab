@@ -1,13 +1,13 @@
 
-% Ê¹ÓÃËµÃ÷ ÊÊÓÃÓÚÂŞµÂSMW200AµÄ¿ØÖÆ³ÌĞò
-% obj = C_RS_SMW200A('192.158.1.1'); Á¬½ÓÉè±¸
-% obj.setFre(10e9); ÉèÖÃÆµÂÊ
-% obj.setLevel(10); ÉèÖÃ·ù¶È
-% obj.on(); ¿ªÊä³ö
-% obj.off(); ¹ØÊä³ö
-% fre = obj.getFre(); »ñÈ¡µ±Ç°ÆµÂÊ
-% level = obj.getLevel(); »ñÈ¡µ±Ç°·ù¶È
-% obj.close(); ¶Ï¿ªÁ¬½Ó
+% ä½¿ç”¨è¯´æ˜ é€‚ç”¨äºç½—å¾·SMW200Açš„æ§åˆ¶ç¨‹åº
+% obj = C_RS_SMW200A('192.158.1.1'); è¿æ¥è®¾å¤‡
+% obj.setFre(10e9); è®¾ç½®é¢‘ç‡
+% obj.setLevel(10); è®¾ç½®å¹…åº¦
+% obj.on(); å¼€è¾“å‡º
+% obj.off(); å…³è¾“å‡º
+% fre = obj.getFre(); è·å–å½“å‰é¢‘ç‡
+% level = obj.getLevel(); è·å–å½“å‰å¹…åº¦
+% obj.close(); æ–­å¼€è¿æ¥
 
 classdef C_RS_SMW200A
     properties
@@ -25,33 +25,33 @@ classdef C_RS_SMW200A
             end
             fopen(obj.interface);
         end
-        %! ÉèÖÃÆµÂÊ
+        %! è®¾ç½®é¢‘ç‡
         function setFre(obj, fre)
             fprintf(obj.interface, ['FREQ:CW ', num2str(fre)]);
         end
-        %! »ñÈ¡ÆµÂÊ
+        %! è·å–é¢‘ç‡
         function fre = getFre(obj)
             fre = query(obj.interface, 'FREQ:CW?');
             fre = str2double(fre);
         end
-        %! ÉèÖÃ·ù¶È
+        %! è®¾ç½®å¹…åº¦
         function setLevel(obj, level)
             fprintf(obj.interface, ['Sourcel:Power:Power ', num2str(level)]);
         end
-        %! »ñÈ¡·ù¶È
+        %! è·å–å¹…åº¦
         function level = getLevel(obj)
             level = query(obj.interface, 'Sourcel:Power:Power?');
             level = str2double(level);
         end
-        %! ´ò¿ªÊä³ö
+        %! æ‰“å¼€è¾“å‡º
         function on(obj)
             fprintf(obj.interface, 'OUTPUT1 1');
         end
-        %! ¹Ø±ÕÊä³ö
+        %! å…³é—­è¾“å‡º
         function off(obj)
             fprintf(obj.interface, 'OUTPUT1 0');
         end
-        %! ¶Ï¿ªÁ¬½Ó
+        %! æ–­å¼€è¿æ¥
         function close(obj)
             fclose(obj.interface);
         end
